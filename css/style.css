@@ -1961,6 +1961,7 @@ pre code {
   .container {
     width: 760px;
   }
+
 }
 @media (min-width: 992px) {
   .container {
@@ -9511,4 +9512,70 @@ span.price {
   transition: 0.3s;
   box-shadow: none;
   opacity: 0.8;
+}
+
+
+
+
+
+.container8 {
+  width: 100%;
+  height: 100%;
+  padding: 0px 8%;
+}
+
+.container8 h1 {
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+
+.container8 h1::after {
+  content: '';
+  background: orangered;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.service8 {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service8 i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: orangered ;
+}
+
+.service8 h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service8:hover {
+  background: orangered;
+  color: #fff;
+  transform: scale(0.55);
+}
+
+.service8:hover i {
+  color: #fff;
 }
